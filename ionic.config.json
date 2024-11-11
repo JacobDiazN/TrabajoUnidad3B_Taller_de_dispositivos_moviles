@@ -1,0 +1,7 @@
+{
+  "name": "GT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
