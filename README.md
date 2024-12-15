@@ -65,11 +65,11 @@ A continuación, se incluyen algunas capturas de pantalla de las páginas princi
 
 # - Pantalla de componente ion-card en página de inicio:
   
-![Imagen de Inicio de Sesión](https://raw.githubusercontent.com/JacobDiazN/TrabajoUnidad3B_Taller_de_dispositivos_moviles/refs/heads/main/src/assets/image/image/imgApp/inicio%20de%20sesi%C3%B3n.png)
+![Imagen de Inicio de Sesión](https://raw.githubusercontent.com/JacobDiazN/TrabajoUnidad3B_Taller_de_dispositivos_moviles/refs/heads/main/src/assets/image/image/imgApp/ion-card.png)
 
 # - Pantalla de componente ion-tabs en página de inicio:
   
-![Imagen de Inicio](https://raw.githubusercontent.com/JacobDiazN/TrabajoUnidad3B_Taller_de_dispositivos_moviles/refs/heads/main/src/assets/image/image/imgApp/inicio.png)
+![Imagen de Inicio](https://raw.githubusercontent.com/JacobDiazN/TrabajoUnidad3B_Taller_de_dispositivos_moviles/refs/heads/main/src/assets/image/image/imgApp/ion-tabs.png)
 
 ## ⚠️ Desafíos y Soluciones
 Durante el desarrollo, algunos de los problemas enfrentados fueron:
