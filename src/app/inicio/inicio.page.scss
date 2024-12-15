@@ -1,0 +1,31 @@
+.card-image {
+    width: 100%; /* La imagen ocupará el 100% del ancho de la card */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+}
+
+.btn-small {
+    font-size: 12px; /* Ajusta el tamaño del texto en los botones */
+    padding: 8px 16px; /* Ajusta el padding para que los botones sean más pequeños */
+    margin-top: 8px; /* Espacio entre los botones */
+}
+
+.custom-card {
+    width: 90%; /* Hace que la card ocupe un 90% del ancho disponible */
+    max-width: 600px; /* Limita el ancho máximo de la card */
+    margin: 0 auto; /* Centra la card horizontalmente */
+}
+
+ion-card-header {
+    padding: 10px 0;
+}
+
+ion-card-title {
+    font-size: 20px; /* Tamaño del título */
+    font-weight: bold;
+}
+
+#imgCardInicio{
+    border-radius: 20px;
+}

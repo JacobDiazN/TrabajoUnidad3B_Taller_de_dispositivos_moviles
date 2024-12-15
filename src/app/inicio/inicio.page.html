@@ -1,7 +1,25 @@
-<ion-content [fullscreen]="true">
-  <div style="text-align: center; padding: 5px;">
-    <ion-img src="../../assets/image/inicio.png"></ion-img>
-  </div>
+<br><br><br><br>
+<ion-content class="ion-padding mt-5 py-5">
+  <ion-card class="ion-text-center mb-5 custom-card">
+    
+    <img id="imgCardInicio" alt="Imagen profesional" src="assets/image/estudio.jpg" class="card-image img-fluid" /> 
+    <ion-card-header>
+      <ion-card-title>Gestión Estudiantil</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h2>Aquí puedes gestionar los eventos y ver la información académica.</h2>     
+      <div class="ion-text-center">
+        <ion-button routerLink="/eventos" class="mb-2 w-75 btn-small">Ver Eventos</ion-button>
+        <ion-button routerLink="/calificaciones" class="mb-2 w-75 btn-small">Ver Calificaciones</ion-button>
+        <ion-button routerLink="/horario-de-clases" class="mb-2 w-75 btn-small">Ver Horario de Clases</ion-button>
+        <ion-button routerLink="/ramos" class="mb-2 w-75 btn-small">Ver Ramos</ion-button>
+        <ion-button routerLink="/planograma-general" class="mb-2 w-75 btn-small">Ver Planograma General</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
 
-  <!-- El contenido principal de la página puede ir aquí -->
-</ion-content> 
+
+
+
+
