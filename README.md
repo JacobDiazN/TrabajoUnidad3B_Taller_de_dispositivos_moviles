@@ -52,6 +52,25 @@ Asegúrate de tener Node.js y Ionic CLI instalados. Si no lo tienes, puedes desc
   bash
   npm install -g @ionic/cli
 
+## 💻 Inicio de Sesión
+
+La aplicación permite a los usuarios gestionar y organizar su tiempo a través de diversas funcionalidades clave. Las principales páginas de la aplicación son:
+
+- **Inicio de sesión**: Página para autenticar a los usuarios. El usuario y la contraseña predeterminados son:
+  - **Usuario**: `jdiaz@uniacc.cl`
+  - **Contraseña**: `123456`
+
+## 📸 Imágenes de la Aplicación
+A continuación, se incluyen algunas capturas de pantalla de las páginas principales de la aplicación:
+
+# - Pantalla de componente ion-card en página de inicio:
+  
+![Imagen de Inicio de Sesión](https://raw.githubusercontent.com/JacobDiazN/TrabajoUnidad3B_Taller_de_dispositivos_moviles/refs/heads/main/src/assets/image/image/imgApp/inicio%20de%20sesi%C3%B3n.png)
+
+# - Pantalla de componente ion-tabs en página de inicio:
+  
+![Imagen de Inicio](https://raw.githubusercontent.com/JacobDiazN/TrabajoUnidad3B_Taller_de_dispositivos_moviles/refs/heads/main/src/assets/image/image/imgApp/inicio.png)
+
 ## ⚠️ Desafíos y Soluciones
 Durante el desarrollo, algunos de los problemas enfrentados fueron:
 
@@ -136,7 +155,7 @@ A continuación, se incluyen algunas capturas de pantalla de las páginas princi
 
 # - Pantalla Principal (Inicio):
   
-![Imagen de Inicio](https://raw.githubusercontent.com/JacobDiazN/TrabajoUnidad3B_Taller_de_dispositivos_moviles/refs/heads/main/src/assets/image/image/imgApp/inicio.png))
+![Imagen de Inicio](https://raw.githubusercontent.com/JacobDiazN/TrabajoUnidad3B_Taller_de_dispositivos_moviles/refs/heads/main/src/assets/image/image/imgApp/inicio.png)
 
 # - Pantalla de Horario de Clases:
 
