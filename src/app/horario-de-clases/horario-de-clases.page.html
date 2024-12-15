@@ -1,6 +1,62 @@
 <br><br><br><br>
-
 <ion-content class="text-center">
   <p class="container mb-5">Aquí se mostrará el horario de clases de los estudiantes.</p>
+  
+  <!-- Botón para agregar un nuevo horario -->
+  <ion-button class="container w-25 mb-3" (click)="openAddModal()">Agregar Horario</ion-button>
+  
+  <!-- Aquí mostramos la lista de horarios de clases -->
+  <ion-list>
+    <ion-item *ngFor="let clase of clases">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{ clase.ramo }}</ion-card-title>
+          <ion-card-subtitle>{{ clase.profesor }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p><strong>Horario:</strong> {{ clase.horario }}</p>
+          
+          <!-- Botones para editar o eliminar -->
+          <ion-button (click)="openEditModal(clase)" expand="full" color="primary">Editar</ion-button>
+          <ion-button (click)="deleteClase(clase)" expand="full" color="danger">Eliminar</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+  <!-- Modal para agregar o modificar horario -->
+  <ion-modal [isOpen]="isModalOpen" (didDismiss)="closeModal()">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>{{ isEditMode ? 'Modificar Horario' : 'Agregar Horario' }}</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="closeModal()">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <form (ngSubmit)="saveClase()">
+          <ion-item>
+            <ion-label position="floating">Nombre del Ramo</ion-label>
+            <ion-input [(ngModel)]="currentClase.ramo" name="ramo" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Profesor</ion-label>
+            <ion-input [(ngModel)]="currentClase.profesor" name="profesor" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Horario</ion-label>
+            <ion-input [(ngModel)]="currentClase.horario" name="horario" required></ion-input>
+          </ion-item>
+          
+          <!-- Botón de guardar -->
+          <ion-button expand="full" type="submit" [color]="isEditMode ? 'warning' : 'success'">{{ isEditMode ? 'Modificar' : 'Agregar' }}</ion-button>
+        </form>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <!-- Volver al inicio -->
   <ion-button class="container w-25" routerLink="/inicio">Volver al Inicio</ion-button>
 </ion-content>
