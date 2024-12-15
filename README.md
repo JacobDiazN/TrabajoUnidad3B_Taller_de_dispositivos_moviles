@@ -58,11 +58,11 @@ La aplicación permite a los usuarios gestionar y organizar su tiempo a través 
 ## 📸 Imágenes de la Aplicación
 A continuación, se incluyen algunas capturas de pantalla de las páginas principales de la aplicación:
 
-# - Pantalla de componente ion-card en página de inicio:
+# - Pantalla de componente ion-modal en página de inicio:
   
 ![Imagen de Componente ion-modal](https://raw.githubusercontent.com/JacobDiazN/TrabajoUnidad3B_Taller_de_dispositivos_moviles/refs/heads/main/src/assets/image/image/imgApp/ion-modal.png)
 
-# - Pantalla de componente ion-tabs en página de inicio:
+# - Pantalla de componente ion-card en página de inicio:
   
 ![Imagen de Componente ion-card](https://raw.githubusercontent.com/JacobDiazN/TrabajoUnidad3B_Taller_de_dispositivos_moviles/refs/heads/main/src/assets/image/image/imgApp/ion-card2.png)
 
