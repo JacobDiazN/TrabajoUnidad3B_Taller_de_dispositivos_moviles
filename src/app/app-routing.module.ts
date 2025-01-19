@@ -35,6 +35,15 @@ const routes: Routes = [
     path: 'eventos',
     loadChildren: () => import('./eventos/eventos.module').then( m => m.EventosPageModule)
   },
+  {
+    path: 'todo-list',
+    loadChildren: () => import('./todo-list/todo-list.module').then( m => m.TodoListPageModule)
+  },
+  {
+    path: '',
+    redirectTo: 'todo-list',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({

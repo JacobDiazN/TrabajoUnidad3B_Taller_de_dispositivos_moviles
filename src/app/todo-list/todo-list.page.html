@@ -1,0 +1,37 @@
+<ion-header class="m-4"></ion-header>
+
+<ion-content>
+  <div class="container">
+    <h1>Lista Completa de Status</h1>
+    <table class="status-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let todo of paginatedTodos; let i = index">
+          <td>{{ i + 1 + (currentPage - 1) * itemsPerPage }}</td>
+          <td>{{ todo.title }}</td>
+          <td>{{ todo.completed ? 'Completed' : 'Pending' }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Pginación -->
+    <div class="pagination">
+      <button ion-button color="light" [disabled]="currentPage === 1" (click)="previousPage()">Anterior</button>
+      <span>Página {{ currentPage }} de {{ totalPages }}</span>
+      <button ion-button color="light" [disabled]="currentPage === totalPages" (click)="nextPage()">Siguiente</button>
+    </div>
+  </div>
+</ion-content>
+
+
+
+
+
+
+
